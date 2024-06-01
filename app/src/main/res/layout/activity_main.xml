@@ -7,30 +7,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/blue"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ini activity"
-        android:id="@+id/tvAct"
-        android:layout_weight="1"/>
+        android:text="This is the inch cm converter activity"
+        android:id="@+id/tvAct"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fragment_container_view_1"
-        android:name="com.example.tryfragment.ExampleFragment"
-        android:background="@color/purple"
+        android:name="com.example.tryfragment.UpperFragment"
         android:layout_weight="1"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fragment_container_view_2"
-        android:name="com.example.tryfragment.SecondFragment"
-        android:background="@color/green"
+        android:name="com.example.tryfragment.LowerFragment"
         android:layout_weight="1"/>
 
 </LinearLayout>
